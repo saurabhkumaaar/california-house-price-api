@@ -40,6 +40,12 @@ The project supports both **individual house predictions** through JSON input an
 ```text
 House-Price-Prediction/
 │
+├── snaps/
+│   ├── api_homepage.png
+│   ├── batch_prediction_output.png
+│   ├── batch_prediction_result.png
+│   └── swagger_predict.png
+│
 ├── california_houses_test_20.csv
 ├── house_features.joblib
 ├── house_model.joblib
@@ -54,6 +60,39 @@ House-Price-Prediction/
 > ⚠️ **Note:** The trained `house_model.joblib` file is not included in this repository due to GitHub's file size limitations. To generate the trained model locally, run `train.py`. This will train the Random Forest model and create the required `house_model.joblib` and `house_features.joblib` files.
 > 
 ---
+## 📸 API Screenshots
+
+### 🏠 API Homepage
+
+The API homepage confirms that the California House Price Prediction API is running successfully.
+
+![API Homepage](snaps/api_homepage.png)
+
+---
+
+### 📚 Swagger UI — House Price Prediction
+
+FastAPI provides interactive API documentation through Swagger UI. The `/predict` endpoint accepts house information and returns the predicted house price.
+
+![Swagger Predict](snaps/swagger_predict.png)
+
+---
+
+### 📊 Batch Prediction
+
+The API supports batch predictions by uploading a CSV file containing multiple house records.
+
+![Batch Prediction Result](snaps/batch_prediction_result.png)
+
+---
+
+### 📁 Batch Prediction Output
+
+The predicted results are generated as a CSV file containing the predictions for the uploaded dataset.
+
+![Batch Prediction Output](snaps/batch_prediction_output.png)
+---
+
 
 ## 📊 Dataset
 
